@@ -42,7 +42,7 @@ public class Boss extends Zombie {
         float distanceToPlayer = (float) Math
                 .sqrt(Math.pow(playerCenterX - centerX, 2) + Math.pow(playerCenterY - centerY, 2));
 
-        float attackRangeThreshold = 135.0f;
+        float attackRangeThreshold = 81.0f;
 
         if (distanceToPlayer < attackRangeThreshold) {
             state = "attacking";
